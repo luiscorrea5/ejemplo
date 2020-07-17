@@ -1,0 +1,218 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/** Globales **/
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/** Utilidades **/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+
+/* Header */
+
+.site-header {
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio {
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 80rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.barra {
+    display: block;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+@media (min-width:768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3rem;
+    }
+}
+
+.contenido-header img {
+    height: 20rem;
+    display: block;
+    margin: auto;
+}
+
+
+/** Navegacion **/
+
+@media (max-width:767px) {
+    .navegacion {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .navegacion a {
+        display: block;
+        text-align: center;
+        background-color: transparent;
+        color: rgb(16, 53, 102);
+        text-decoration: none;
+        font-size: 2.2rem;
+        font-weight: 300;
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (min-width:768px) {
+    .navegacion a {
+        margin-right: 2rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
+}
+
+.navegacion a:hover {
+    background-color: rgb(22, 72, 136);
+    color: dodgerblue;
+    font-weight: 700;
+}
+
+@media (min-width:768px) {
+    .navegacion a:hover {
+        background-color: transparent;
+        color: tomato;
+        font-weight: 700;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 2rem;
+    }
+}
+
+
+/** Iconos Nosotros **/
+
+.iconos-nosotros {
+    display: block;
+    justify-content: space-between;
+}
+
+.icono {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+        text-align: center;
+    }
+    .icono h3 {
+        text-transform: uppercase;
+    }
+}
+
+
+/** Footer **/
+
+.site-footer {
+    background-color: chocolate;
+    text-align: center;
+    padding: 2rem;
+}
+
+.site-footer a:hover {
+    color: dodgerblue;
+}
